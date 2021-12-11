@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;800&display=swap');
+
+/*-------------------- scrollbar---------------*/
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  background: #888; 
+}
+  
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: #aac0ca; 
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body{
+  font-family: 'Be Vietnam', sans-serif;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  
+}
+
+.box-card{
+  margin-top: 2%;
+  border-radius: 18px;
+  box-shadow: 0px 7px 35px rgb(90 97 105 / 10%), 0px 15px 22px rgb(90 97 105 / 10%), 0px 4px 8px rgb(90 97 105 / 12%), 0px 2px 3px rgb(90 97 105 / 11%);
+  background-color: #ffffff;
+}
+
