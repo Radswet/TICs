@@ -1,1 +1,0 @@
-Este es un prototipo realizado para tener una idea de como seria la aplicacion.
