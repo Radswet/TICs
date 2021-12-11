@@ -1,0 +1,8 @@
+.box-card{
+    border-radius: 18px;
+    box-shadow: 0px 7px 35px rgb(90 97 105 / 10%), 0px 15px 22px rgb(90 97 105 / 10%), 0px 4px 8px rgb(90 97 105 / 12%), 0px 2px 3px rgb(90 97 105 / 11%);
+    background-color: #ffffff;
+}
+html{
+    background-color: #6082B6;
+}

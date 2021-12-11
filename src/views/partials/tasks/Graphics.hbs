@@ -1,0 +1,15 @@
+
+{{#if data.graph}}
+  {{#each data.graph}}
+    {{#if @first}}
+    <div class="col-start-3 col-end-5  px-8 pt-6 pb-8 mb-4 max-w-3xl box-card">
+      
+      <div className='header' class="grid justify-items-center">
+          <h1 className='title'>Huevos clasificados: {{date fecha "DD-MM-yyyy"}}</h1>
+      </div>
+
+      <canvas id="{{_id}}" width="400" height="400"></canvas>
+    </div>
+    {{/if}}
+  {{/each}}
+{{/if}}

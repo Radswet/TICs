@@ -1,0 +1,32 @@
+<script>
+{{#if data.graph}}
+{{#each data.graph }}
+{{#if @first}}
+const ctx{{@index}} = document.getElementById("{{_id}}").getContext('2d');
+const myChart{{@index}} = new Chart(ctx{{@index}}, {
+    type: 'bar',
+    data: {
+        labels: ["Tercera", "Segunda", "Primera", "Extra", "Super", "Jumbo"],
+        datasets: [
+        {
+            label: "Blanco",
+            backgroundColor: "#3e95cd",
+            data: [{{huevos.blanco.tercera}},{{huevos.blanco.segunda}},{{huevos.blanco.primera}},{{huevos.blanco.extra}},{{huevos.blanco.super}},{{huevos.blanco.jumbo}}]
+        }, {
+            label: "Color",
+            backgroundColor: "#8e5ea2",
+            data: [{{huevos.color.tercera}},{{huevos.color.segunda}},{{huevos.color.primera}},{{huevos.color.extra}},{{huevos.color.super}},{{huevos.color.jumbo}}]
+        }
+        ]
+        },
+        options: {
+            title: {
+            display: true,
+            text: 'Cantidad de huevos'
+        }
+        }
+});
+{{/if}}
+{{/each}}
+{{/if}}
+</script>
