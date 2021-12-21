@@ -14,7 +14,7 @@ const config = {
   secret: SECRET,
   baseURL: BASEURL,
   clientID: CLIENTID,
-  issuerBaseURL: 'https://radswet.us.auth0.com',
+  issuerBaseURL: ISSUER,
 };
 
 const app = express();
